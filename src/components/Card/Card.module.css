@@ -1,0 +1,32 @@
+.card {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  background-color: rgba(175, 181, 154, 0.803);
+  width: fit-content;
+  max-width: 350px;
+  margin-bottom: 20px;
+}
+.img {
+  border-radius: 100px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.name {
+  font-size: 2em;
+  font-family: sans-serif;
+}
+
+.boton {
+  background: #4aff4493;
+  border-radius: 28px;
+}
+.boton:hover {
+  background: rgb(171, 5, 242);
+}
+.botonC {
+  background-color: transparent;
+  border: none;
+  
+}

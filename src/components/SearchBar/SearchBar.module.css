@@ -1,0 +1,16 @@
+.searchBar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.input{
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(85, 255, 0, 0.773);
+    border-radius: 5px;
+}
+.btn{
+    border-radius: 5px;
+    background-color:rgb(255, 238, 0);
+    margin-left: 10px;
+}

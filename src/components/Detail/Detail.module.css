@@ -1,0 +1,32 @@
+.divP {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-image: url(https://static.vecteezy.com/system/resources/previews/004/584/966/non_2x/star-universe-background-stardust-in-deep-universe-milky-way-galaxy-illustration-free-vector.jpg); */
+}
+
+.divInfo {
+  margin-left: auto;
+  border-radius: 50px;
+  background-color: rgba(175, 181, 154, 0.803);
+  width: 50%;
+  max-width: 400px;
+  font-size: 20px;
+}
+.list {
+  margin: 0 auto;
+  text-align: start;
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.divImage {
+  align-items: center;
+  width: 50%;
+}
+
+.img {
+  padding-top: 20px;
+  width: 60%;
+  border-radius: 50px;
+}
