@@ -1,11 +1,11 @@
 import { useState } from "react";
-import styles from "./Form.module.css";
+import style from "./Form.module.css";
 import { validate } from "./validation";
 
 export default function Form(props) {
-  const [userData, setUserData] = useState({ username: "", password: "" });
+  const [userData, setUserData] = useState({ email: "", password: "" });
 
-  const [error, setError] = useState({ username: "", password: "" });
+  const [error, setError] = useState({ email: "", password: "" });
 
   function handleSubmite(userData) {
     props.login(userData);
@@ -28,10 +28,22 @@ export default function Form(props) {
   }
 
   return (
-    <div className={styles.divform}>
-      <form className={styles.form}>
+    <div className={style.divform}>
+      <div className={style.title}>
+        <h1 className={style.tittle}>WELCOME TO RICK AND MORTY APP</h1>
+        <h3>This app was created by Jhamil Fernandez</h3>
+
+        <a href="https://www.linkedin.com/in/jhamil-fernandez/">
+          <button className={style.btn}>Linkedin</button>
+        </a>
+        <a href="https://github.com/jfernandez141">
+          <button className={style.btn}>GitHub</button>
+        </a>
+      </div>
+      <form className={style.form}>
         <label htmlFor="">Email: </label>
         <input
+          placeholder="ejemplo@gmail.com"
           type="text"
           name="email"
           value={userData.email}
@@ -42,6 +54,7 @@ export default function Form(props) {
 
         <label htmlFor="">Password: </label>
         <input
+          placeholder="1password"
           type="password"
           name="password"
           value={userData.password}
@@ -50,7 +63,7 @@ export default function Form(props) {
         <p>{error.password}</p>
         <br />
 
-        <button onClick={()=>handleSubmite(userData)}>LOGIN</button>
+        <button className={style.btn} onClick={() => handleSubmite(userData)}>LOGIN</button>
       </form>
     </div>
   );

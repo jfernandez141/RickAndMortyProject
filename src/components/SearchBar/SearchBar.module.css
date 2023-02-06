@@ -14,3 +14,6 @@
     background-color:rgb(255, 238, 0);
     margin-left: 10px;
 }
+.btn:hover {
+    background-color: rgb(187, 56, 234);
+  }

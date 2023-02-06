@@ -27,6 +27,10 @@
 }
 .botonC {
   background-color: transparent;
-  border: none;
-  
+  border: none;  
+}
+.botonC:hover{
+  background-color: red;
+  border-radius: 10px;
+
 }

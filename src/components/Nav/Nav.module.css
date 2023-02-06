@@ -6,7 +6,6 @@
   justify-content: flex-end;
   border-radius: 5px;
   justify-content: space-between;
-  
 }
 .divNav {
   padding-top: 10px;
@@ -17,8 +16,10 @@
   margin-left: 10px;
   padding-right: 10px;
 }
-.divBtn{
-  
+.btn:hover {
+  background-color: rgb(187, 56, 234);
+}
+.divBtn {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
