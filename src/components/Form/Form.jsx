@@ -49,8 +49,8 @@ export default function Form(props) {
           value={userData.email}
           onChange={handleInputChange}
         />
+        <p>ejemplo@gmail.com</p>
         <p>{error.email}</p>
-        <br />
 
         <label htmlFor="">Password: </label>
         <input
@@ -60,10 +60,12 @@ export default function Form(props) {
           value={userData.password}
           onChange={handleInputChange}
         />
+        <p>1password</p>
         <p>{error.password}</p>
-        <br />
 
-        <button className={style.btn} onClick={() => handleSubmite(userData)}>LOGIN</button>
+        <button className={style.btn} onClick={() => handleSubmite(userData)}>
+          LOGIN
+        </button>
       </form>
     </div>
   );
