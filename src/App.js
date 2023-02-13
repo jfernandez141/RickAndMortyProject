@@ -21,10 +21,8 @@ function App() {
   const password = "1password";
 
   function login(userData) {
-    console.log(userData.password);
-    console.log(userData.email);
-
-    if (userData.password === password && userData.email === email) {
+    
+    if ((userData.password === password && userData.email === email)|| userData ==="guest") {
       setAccess(true);
       navigate("/home");
     } else {

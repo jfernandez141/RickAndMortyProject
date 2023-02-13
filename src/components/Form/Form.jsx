@@ -62,10 +62,14 @@ export default function Form(props) {
         />
         <p>1password</p>
         <p>{error.password}</p>
-
-        <button className={style.btn} onClick={() => handleSubmite(userData)}>
-          LOGIN
-        </button>
+        <div>
+          <button className={style.btn} onClick={() => handleSubmite(userData)}>
+            Login
+          </button>
+          <button className={style.btn} onClick={() => handleSubmite("guest")}>
+            Guest Login
+          </button>
+        </div>
       </form>
     </div>
   );
